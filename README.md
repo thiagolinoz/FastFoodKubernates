@@ -3,7 +3,7 @@
 ## Stacks utilizadas:
  - Docker
  - Docker-compose
- - Banco de dados - MariaDB
+ - Banco de dados - MySQL Aurora
  - Migration de dados - Flyway
  - Spring boot
  - Swagger
