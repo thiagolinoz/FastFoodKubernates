@@ -7,6 +7,15 @@
  - Migration de dados - Flyway
  - Spring boot
  - Swagger
+ - Python
+ - Terraform
+
+## Pipeline de Deploy
+ - Github Action
+
+ Para utilizar a pipeline é preciso adicionar ao GitHub Secrets as variaveis necessárias da conta AWS que se pretende realizar a criação das infraestruturas. 
+ O terraform contendo o código para criação da infraestrura EKS na AWS para hospedar a aplicação. Também é criado, via terraform, um repositório ECR AWS para a imagem do projeto que será armazenada após o build da aplicação. 
+ O trigger do github action é o push no repositório main, porém pode ser realizado ao entrar Action e executar o último job.
 
 ## Ambiente de Desenvolvimento:
 
