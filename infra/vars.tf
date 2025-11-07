@@ -7,7 +7,7 @@ variable "project_name" {
 }
 
 variable "bucket_name" {
-  default = "postech-fiap-fastfood-backend-eks-lino" #TODO trocar por outro nome de bucket na entrega
+  default = "postech-fiap-fastfood-backend-eks-fase4"
 }
 
 variable "cidr_block_vpc" {
@@ -16,10 +16,10 @@ variable "cidr_block_vpc" {
 
 variable "tags" {
   default = {
-    Name = "fastfood-3"
+    Name = "fastfood-4"
   }
 }
 
 variable "role_lab" {
-  default = "arn:aws:iam::387847618404:role/LabRole" #TODO trocar pelo AWSAccountId da conta que for executar
+  default = "arn:aws:iam::127542093972:role/LabRole" #TODO trocar pelo AWSAccountId da conta que for executar
 }
