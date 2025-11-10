@@ -7,7 +7,7 @@ variable "project_name" {
 }
 
 variable "bucket_name" {
-  default = "postech-fiap-fastfood-backend-eks-fase4"
+  default = "postech-fiap-fastfood-backend-eks-fase4-test"
 }
 
 variable "cidr_block_vpc" {
