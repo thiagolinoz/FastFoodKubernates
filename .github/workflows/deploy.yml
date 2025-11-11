@@ -3,10 +3,10 @@ name: Deploy Infra AWS
 on:
   workflow_dispatch:
   push:
-    branches: [fase4]
+    branches: [main]
 
 env:
-  BUCKET_NAME: postech-fiap-fastfood-backend-eks-fase4-test
+  BUCKET_NAME: postech-fiap-fastfood-backend-eks-fase4
   AWS_REGION: us-east-1
 
 jobs:
@@ -20,6 +20,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID}}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Create S3 Backend Bucket if it doesn't exist
