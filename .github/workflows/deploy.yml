@@ -3,7 +3,7 @@ name: Deploy Infra AWS
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [fase4]
 
 env:
   BUCKET_NAME: postech-fiap-fastfood-backend-eks-fase4
