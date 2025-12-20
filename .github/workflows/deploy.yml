@@ -6,7 +6,7 @@ on:
     branches: [fase4]
 
 env:
-  BUCKET_NAME: postech-fiap-fastfood-backend-eks-fase4
+  BUCKET_NAME: postech-fiap-fastfood-backend-eks-fase4-dynamo
   AWS_REGION: us-east-1
 
 jobs:
