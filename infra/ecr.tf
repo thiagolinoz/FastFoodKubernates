@@ -1,6 +1,6 @@
 variable "repositorios" {
   type    = set(string)
-  default = ["video-app", "video-frame-extractor", " video-processing-tracker"]
+  default = ["video-app", "video-frame-extractor", "video-processing-tracker"]
 }
 
 resource "aws_ecr_repository" "postech_fiap_video_repo" {
