@@ -7,7 +7,7 @@ variable "project_name" {
 }
 
 variable "bucket_videos_name" {
-  default = "bucket-videos"
+  default = "postech-fiap-bucket-videos"
 }
 
 variable "cidr_block_vpc" {
