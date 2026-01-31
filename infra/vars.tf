@@ -3,11 +3,11 @@ variable "region_default" {
 }
 
 variable "project_name" {
-  default = "postech-fiap-fastfood"
+  default = "postech-fiap-video"
 }
 
-variable "bucket_name" {
-  default = "postech-fiap-fastfood-backend-eks-fase4-dynamo"
+variable "bucket_videos_name" {
+  default = "bucket_videos"
 }
 
 variable "cidr_block_vpc" {
@@ -16,10 +16,10 @@ variable "cidr_block_vpc" {
 
 variable "tags" {
   default = {
-    Name = "fastfood-4"
+    Name = "postech-fiap-video"
   }
 }
 
 variable "role_lab" {
-  default = "arn:aws:iam::494556609597:role/LabRole" #TODO trocar pelo AWSAccountId da conta que for executar
+  default = "arn:aws:iam::072216138316:role/LabRole" #TODO trocar pelo AWSAccountId da conta que for executar
 }

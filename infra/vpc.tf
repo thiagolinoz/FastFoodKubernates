@@ -1,4 +1,4 @@
-resource "aws_vpc" "fiap_fastfood_vpc" {
+resource "aws_vpc" "fiap_video_vpc" {
   cidr_block           = var.cidr_block_vpc
   enable_dns_hostnames = true
   enable_dns_support   = true

@@ -1,8 +1,8 @@
 resource "aws_route_table" "route_table_public" {
-  vpc_id = aws_vpc.fiap_fastfood_vpc.id
+  vpc_id = aws_vpc.fiap_video_vpc.id
 
   route {
-    cidr_block = aws_vpc.fiap_fastfood_vpc.cidr_block
+    cidr_block = aws_vpc.fiap_video_vpc.cidr_block
     gateway_id = "local"
   }
   route {
@@ -12,7 +12,7 @@ resource "aws_route_table" "route_table_public" {
 }
 
 resource "aws_main_route_table_association" "main_route_set" {
-  vpc_id         = aws_vpc.fiap_fastfood_vpc.id
+  vpc_id         = aws_vpc.fiap_video_vpc.id
   route_table_id = aws_route_table.route_table_public.id
 }
 

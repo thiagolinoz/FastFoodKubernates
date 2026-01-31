@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "postech-fiap-fastfood-backend-eks-fase4-dynamo"
+    bucket = "postech-fiap-video-backend-eks"
     key    = "backend/tfstate/terraform.tfstate"
     region = "us-east-1"
   }
